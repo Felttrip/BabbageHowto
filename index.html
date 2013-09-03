@@ -50,11 +50,11 @@
 		</div>
 		<div class="column">
 			<h3>What is Git?</h3>
-			<p>Git is a distributed version control and source code management system.  I'm not going to get into the nitty gritty
-			about how Git works, but it's a great system for keeping your work organized, up to date, and accessible. For more info check out the <a href="http://git-scm.com/about">about page.</a>  </p>
+			<p>Git is a distributed version control and source code management system.  I'm not going to go into the nitty gritty
+			about how Git works, but it is a great system for keeping your work organized, up to date, and accessible. For more info check out the <a href="http://git-scm.com/about">about page.</a>  </p>
 		</div>
 		<div class="sixteen columns">
-			<h3>Getting started</h3>
+			<h3>Getting Started</h3>
 			<p><strong>You're going to need a few things to get started.</strong></p>
 			<ul class="square">
 				<li>A University of Missouri pawprint and password.</li>
@@ -69,7 +69,7 @@
 	<div class="container"><!--Second container-->
 		<div class="columns">
 			<h3>Step 1</h3>
-				<p>The first thing you need to do is log onto you Babbage account using <a href="ssh.html">SSH.</a>
+				<p>The first thing you need to do is log into your Babbage account using <a href="ssh.html">SSH.</a>
 				<pre>Using username "pawprint".
 "pawprint"@babbage.cs.missouri.edu's password:</pre></p>
 		
@@ -84,11 +84,11 @@
 				<pre>$ git config --global user.email "your_email@example.com"</pre></p>
 	
 			<h3>Step 3</h3>
-				<p>I like to use SSH keys, so here's a quick walk through for that.
+				<p>I like to use SSH keys, so here's a quick walk through.
 				<br>From your home directory run:
 				<pre>$ cd ~/.ssh
 $ ls</pre><br>
-				This lists all of the files in your .ssh directory, which is where key pairs are stored. If you have a file named 'id_rsa.pub or 'id_dsa.pub' skip to <strong>step 5</strong></p>
+				This lists all of the files in your .ssh directory, which is where key pairs are stored. If you have a file named 'id_rsa.pub or 'id_dsa.pub' skip to <a href="#C5">step 5</a></strong></p>
 	
         	<h3>Step 4</h3>
 				<p>Now we are going to generate a new SSH key. Were going to use the default settings, so when asked to enter a file to save the key, just hit enter 
@@ -104,8 +104,10 @@ Enter file in which to save the key (/home/you/.ssh/id_rsa):</pre><br>
 # The key fingerprint is:
 # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</pre><br>
 		
+			
+}
 		
-			<h3>Step 5</h3>
+			<h3><a id="C5" text-decoration: none>Step 5</a></h3>
 			<p>We're on the home stretch. Now were going to add your SSH key to GitHub.<br> Open up the 'id_rsa.pub' file you just generated with vim, vi, nano, or any other text editor you see fit.
 			<pre>$ vim id_rsa.pub</pre>
 			<br>Copy the entire contents of the file, were going to paste this into GitHub.<br><br>
