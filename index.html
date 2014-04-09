@@ -70,8 +70,8 @@
 		<div class="columns">
 			<h3>Step 1</h3>
 				<p>The first thing you need to do is log into your Babbage account using <a href="ssh.html">SSH.</a>
-				<pre>Using username "pawprint".
-"pawprint"@babbage.cs.missouri.edu's password:</pre></p>
+				<pre>ssh "pawprint"@babbage.cs.missouri.edu
+nctvyc@babbage.cs.missouri.edu's password:</pre></p>
 		
 			<h3>Step 2</h3>
 				<p>Because Git is already installed on Babbage, you can jump right into configuring it.</p>
@@ -102,10 +102,7 @@ Enter file in which to save the key (/home/you/.ssh/id_rsa):</pre><br>
 				<br><br><pre>Your identification has been saved in /home/you/.ssh/id_rsa.
 # Your public key has been saved in /home/you/.ssh/id_rsa.pub.
 # The key fingerprint is:
-# 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</pre><br>
-		
-			
-}
+# [a really long string of hex values] your_email@example.com</pre><br>
 		
 			<h3><a id="C5" text-decoration: none>Step 5</a></h3>
 			<p>We're on the home stretch. Now were going to add your SSH key to GitHub.<br> Open up the 'id_rsa.pub' file you just generated with vim, vi, nano, or any other text editor you see fit.
